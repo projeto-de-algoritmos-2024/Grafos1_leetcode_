@@ -48,12 +48,12 @@ class Solution(object):
         backtrack(0)
         return resultados
     
-sol = Solution()
+"""sol = Solution()
 
 resultados = sol.solveNQueens(1)
 
 for resultado in resultados:
     for linha in resultado:
         print(linha)
-    print()
+    print()"""
         
