@@ -37,36 +37,35 @@ class Solution(object):
         """
         
         #Algoritmo da resolução do problema:
-        def dfs(matriz):
-            linhas, colunas = len(matriz), len(matriz[0])
-            dp = {}  # Dicionário para armazenar os resultados das subsoluções
+        linhas, colunas = len(matrix), len(matrix[0])
+        dp = {}  # Dicionário para armazenar os resultados das subsoluções
 
-            def visitar_dfs(linha, coluna, valor_anterior):
-                # Verificar se está fora dos limites ou se o valor não está aumentando
-                if (linha < 0 or linha == linhas or coluna < 0 or coluna == colunas or matriz[linha][coluna] <= valor_anterior):
-                    return 0
+        def visitar_dfs(linha, coluna, valor_anterior):
+            # Verificar se está fora dos limites ou se o valor não está aumentando
+            if (linha < 0 or linha == linhas or coluna < 0 or coluna == colunas or matrix[linha][coluna] <= valor_anterior):
+                return 0
 
-                # Retornar o resultado armazenado, se existir
-                if (linha, coluna) in dp:
-                    return dp[(linha, coluna)]
+            # Retornar o resultado armazenado, se existir
+            if (linha, coluna) in dp:
+                return dp[(linha, coluna)]
 
-                # Inicializar o comprimento máximo com 1 (a célula atual)
-                resultado = 1
+            # Inicializar o comprimento máximo com 1 (a célula atual)
+            resultado = 1
 
-                # Explorar todas as quatro direções
-                resultado = max(resultado, 1 + visitar_dfs(linha + 1, coluna, matriz[linha][coluna]))  # Abaixo
-                resultado = max(resultado, 1 + visitar_dfs(linha - 1, coluna, matriz[linha][coluna]))  # Acima
-                resultado = max(resultado, 1 + visitar_dfs(linha, coluna + 1, matriz[linha][coluna]))  # Direita
-                resultado = max(resultado, 1 + visitar_dfs(linha, coluna - 1, matriz[linha][coluna]))  # Esquerda
+            # Explorar todas as quatro direções
+            resultado = max(resultado, 1 + visitar_dfs(linha + 1, coluna, matrix[linha][coluna]))  # Abaixo
+            resultado = max(resultado, 1 + visitar_dfs(linha - 1, coluna, matrix[linha][coluna]))  # Acima
+            resultado = max(resultado, 1 + visitar_dfs(linha, coluna + 1, matrix[linha][coluna]))  # Direita
+            resultado = max(resultado, 1 + visitar_dfs(linha, coluna - 1, matrix[linha][coluna]))  # Esquerda
 
-                # Armazenar o resultado no dicionário dp
-                dp[(linha, coluna)] = resultado
-                return resultado
+            # Armazenar o resultado no dicionário dp
+            dp[(linha, coluna)] = resultado
+            return resultado
 
-            # Iniciar a DFS em todas as células da matriz
-            for linha in range(linhas):
-                for coluna in range(colunas):
-                    visitar_dfs(linha, coluna, -1)  # Começar com um valor menor que qualquer célula
+        # Iniciar a DFS em todas as células da matriz
+        for linha in range(linhas):
+            for coluna in range(colunas):
+                visitar_dfs(linha, coluna, -1)  # Começar com um valor menor que qualquer célula
 
-            # Retornar o caminho mais longo encontrado
-            return max(dp.values())
+        # Retornar o caminho mais longo encontrado
+        return max(dp.values())
