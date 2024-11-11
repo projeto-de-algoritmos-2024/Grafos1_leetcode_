@@ -6,7 +6,7 @@
 |Matrícula | Aluno |
 | -- | -- |
 | 21/1039546  |  Joel Soares Rangel |
-| xx/xxxxxx  |  Pedro Augusto Dourado Izarias |
+| 20/0062620  |  Pedro Augusto Dourado Izarias |
 
 ## Sobre 
 O objetivo desse repositório e acompanhar os conteúdos discutidos na disciplina de Programas e Algoritmos e aplicar o conhecimento na resoluções de questões
