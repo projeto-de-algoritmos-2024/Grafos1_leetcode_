@@ -23,7 +23,7 @@ Ter a linguagem instalada no local de teste.
 
 - [329. Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
 - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
-
+- [753. Cracking the Safe](https://leetcode.com/problems/cracking-the-safe/description/)
 
 ## Questões extras
 
