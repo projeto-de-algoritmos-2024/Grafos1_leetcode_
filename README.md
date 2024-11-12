@@ -29,5 +29,9 @@ Ter a linguagem instalada no local de teste.
 
 - [51. N-Queens](https://leetcode.com/problems/n-queens/description/)
 
+## Entregas
+
+- [Entrega 1](entregas\entrega-grafos1.md)
+
 
 
