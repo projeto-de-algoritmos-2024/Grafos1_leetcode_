@@ -12,6 +12,8 @@
 
 - [753. Cracking the Safe](https://leetcode.com/problems/cracking-the-safe/description/)
 
+![753](assets/753.png)
+
 ## Questões extras
 
 - [51. N-Queens](https://leetcode.com/problems/n-queens/description/)
