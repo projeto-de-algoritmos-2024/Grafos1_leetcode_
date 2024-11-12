@@ -31,7 +31,7 @@ Ter a linguagem instalada no local de teste.
 
 ## Entregas
 
-- [Entrega 1](entregas\entrega-grafos1.md)
+- [Entrega 1](https://github.com/projeto-de-algoritmos-2024/Grafos1_leetcode_/blob/master/entregas/entrega-grafos1.md)
 
 
 
