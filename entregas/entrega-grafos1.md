@@ -20,6 +20,5 @@
 
 ## Vídeo de entrega:
 
-<video width="640" height="360" controls>
-    <source src="assets/Reunião%20do%20Microsoft%20Teams-20241111_202205-Gravação%20de%20Reunião.mp4" type="video/mp4">
-</video>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/y0unlSQ9qSs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
