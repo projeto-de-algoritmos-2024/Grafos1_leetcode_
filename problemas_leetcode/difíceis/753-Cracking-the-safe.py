@@ -1,4 +1,4 @@
-class Solucao:
+class Solution:
     def crackSafe(self, n: int, k: int) -> str:
         # Número total de códigos possíveis
         tamanhoSenha = k**n
